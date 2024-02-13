@@ -19,5 +19,6 @@ CREATE TABLE pieces_maison (
     code_identification TEXT UNIQUE,
     etat INTEGER,
     maison_id INTEGER,
+    temperature INTEGER,
     FOREIGN KEY (maison_id) REFERENCES maison (id)
 );
