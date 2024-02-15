@@ -90,7 +90,7 @@ router.post('/room', (req, res) => {
     });
 });*/
 
-router.put('/room/:code_identification', (req, res) => {
+/*router.put('/room/:code_identification', (req, res) => {
     const code_identification = req.params.code_identification;
     const { etat, temperature } = req.body;
     db.run('UPDATE pieces_maison SET etat = ?, temperature = ? WHERE code_identification = ?', [etat, temperature, code_identification], function(err) {
@@ -102,6 +102,6 @@ router.put('/room/:code_identification', (req, res) => {
             res.sendStatus(200);
         }
     });
-});
+});*/
 
 module.exports = router;
